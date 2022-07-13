@@ -20,12 +20,14 @@ $(document).ready(function($) {
 const navMenu = document.getElementsByClassName("mb_nav"),
   navToggle = document.getElementsByClassName("mb-menu"),
   navClose = document.getElementsByClassName("uil-times"),
+  body = document.querySelector(".body"),
   navLink = document.querySelectorAll(".nav__link");
+   
 // When we click on the navToggle, we add the left menu class
 if (navToggle) {
   navToggle[0].addEventListener("click", () => {
-    console.log("clicked")
     navMenu[0].classList.add("left");
+    body.style.overflow = 'hidden'
   });
 }
 
@@ -33,6 +35,7 @@ if (navToggle) {
 if (navClose) {
   navClose[0].addEventListener("click", () => {
     navMenu[0].classList.remove("left");
+    body.style.overflow = 'visible'
   });
 }
 
