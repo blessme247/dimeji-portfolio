@@ -184,8 +184,6 @@ img {
   left: -100%;
   bottom: 0;
   z-index: var(--z-fixed);
-  /* background-color: var(--body-color); */
-  /* background-color: var(--first-color); */
   -moz-transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
@@ -254,7 +252,6 @@ img {
 .uil-ellipsis-v,
 .uil-times {
   background-color: var(--first-color);
-  /* padding: .2rem; */
   border-radius: 50% 50% 40% 70%;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
@@ -276,11 +273,6 @@ img {
 }
 /*==================== NAV ====================*/
 
-/* show menu */
-
-/* Active link */
-
-/* Change background header */
 
 /*==================== HOME ====================*/
 .home__container {
@@ -512,10 +504,8 @@ img {
 .exp-company-title {
   padding:  1rem ;
   border-left: 2px solid var(--first-color);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.exp-company-title:hover {
   background-color: var(--first-color-light);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .exp-company {
   position: relative;
@@ -793,6 +783,21 @@ footer {
   .experience {
     flex-direction: row;
   }
+  .exp-company-title {
+    width: 22%;
+  }
+  .experience-details {
+    width: 70%;
+  }
+  .exp-company-title {
+    padding:  1rem ;
+    border-left: 2px solid var(--first-color);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: transparent;
+  }
+  .exp-company-title:hover {
+    background-color: var(--first-color-light);
+  }
   
 }
 
@@ -821,7 +826,8 @@ footer {
     bottom: initial;
     left: 0;
     /* background-color: hsl(var(--hue-color), 28%, 9%); */
-    position: static;
+    background-color: var(--body-color);
+    position: fixed;
   }
 
   .header,
@@ -860,7 +866,6 @@ footer {
 
   .nav__list {
     flex-direction: row;
-    /* padding-left: 1.5rem; */
   }
 
   .uil-times,
@@ -948,20 +953,7 @@ footer {
   .portfolio__content {
     column-gap: 1.5rem;
   }
-  /* .swiper-portfolio-icon{
-    font-size:  3.5rem;
-    z-index: 10000;
-  }
-
-  .swiper-button-prev {
-    
-    left: -1rem;
-  }
-
-  .swiper-button-next{
-    
-    right: -1rem;
-  } */
+ 
 
   .contact__form {
     width: 460px;
